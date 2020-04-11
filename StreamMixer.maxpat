@@ -39,11 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-42",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 595.0, 299.0, 86.0, 35.0 ],
+					"text" : ";\rdsp open"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 698.0, 315.0, 77.0, 22.0 ],
+					"patching_rect" : [ 691.0, 267.5, 93.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
 						"appicon_mac" : "",
@@ -51,7 +64,7 @@
 						"audiosupport" : 1,
 						"bundleidentifier" : "com.mycompany.myprogram",
 						"cantclosetoplevelpatchers" : 1,
-						"cefsupport" : 1,
+						"cefsupport" : 0,
 						"copysupport" : 1,
 						"database" : 0,
 						"extensions" : 1,
@@ -62,7 +75,7 @@
 						"preffilename" : "Max 8 Preferences",
 						"searchformissingfiles" : 1,
 						"statusvisible" : 0,
-						"usesearchpath" : 0
+						"usesearchpath" : 1
 					}
 ,
 					"text" : "standalone"
@@ -80,13 +93,13 @@
 					"patching_rect" : [ 494.0, 123.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "toggle",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "toggle",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1
+							"parameter_mmax" : 1,
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -204,14 +217,14 @@
 									"patching_rect" : [ 256.5, 44.0, 69.0, 140.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ -8.000000999999997 ],
 											"parameter_shortname" : "send",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4,
 											"parameter_mmin" : -70.0,
 											"parameter_longname" : "live.gain~[3]",
 											"parameter_initial_enable" : 1,
-											"parameter_mmax" : 6.0
+											"parameter_mmax" : 6.0,
+											"parameter_initial" : [ -8.000000999999997 ]
 										}
 
 									}
@@ -231,12 +244,12 @@
 									"patching_rect" : [ 470.5, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 81.000000000000114 ],
 											"parameter_shortname" : "live.dial[2]",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[5]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_initial" : [ 81.000000000000114 ]
 										}
 
 									}
@@ -256,12 +269,12 @@
 									"patching_rect" : [ 427.5, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 56.999999999999972 ],
 											"parameter_shortname" : "damping",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[4]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_initial" : [ 56.999999999999972 ]
 										}
 
 									}
@@ -281,12 +294,12 @@
 									"patching_rect" : [ 392.5, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 57.999999999999936 ],
 											"parameter_shortname" : "decay",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[3]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_initial" : [ 57.999999999999936 ]
 										}
 
 									}
@@ -306,12 +319,12 @@
 									"patching_rect" : [ 352.0, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
-											"parameter_initial" : [ 36.000000000000014 ],
 											"parameter_shortname" : "size",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[2]",
-											"parameter_initial_enable" : 1
+											"parameter_initial_enable" : 1,
+											"parameter_initial" : [ 36.000000000000014 ]
 										}
 
 									}
@@ -422,7 +435,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 855.0, 386.0, 640.0, 480.0 ],
+						"rect" : [ 855.0, 386.0, 982.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -450,6 +463,162 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"autosave" : 1,
+									"bgmode" : 1,
+									"border" : 0,
+									"clickthrough" : 0,
+									"enablehscroll" : 0,
+									"enablevscroll" : 0,
+									"id" : "obj-5",
+									"lockeddragscroll" : 0,
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 4,
+									"offset" : [ 0.0, 0.0 ],
+									"outlettype" : [ "signal", "signal", "", "" ],
+									"patching_rect" : [ 172.0, 206.0, 555.0, 196.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_invisible" : 1,
+											"parameter_longname" : "amxd~[1]",
+											"parameter_shortname" : "amxd~[1]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"saved_object_attributes" : 									{
+										"parameter_enable" : 1,
+										"patchername" : "Max Compressor.amxd",
+										"patchername_fallback" : "~/max/StreamMixer/modules/Max Compressor.amxd"
+									}
+,
+									"snapshot" : 									{
+										"filetype" : "C74Snapshot",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "max~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
+										"snapshot" : 										{
+											"name" : "Max Compressor.amxd",
+											"origname" : "~/max/StreamMixer/modules/Max Compressor.amxd",
+											"valuedictionary" : 											{
+												"parameter_values" : 												{
+													"AGC" : 1.0,
+													"Attack" : 37.0,
+													"Bypass" : 0.0,
+													"ChannelCoupling" : 0.0,
+													"Delay" : 0.0,
+													"DownExpandEnable" : 1.0,
+													"DownExpandThresh" : -23.0,
+													"DualBand" : 0.0,
+													"Gain" : 0.0,
+													"LevelDetectFreeze" : -54.0,
+													"LevelDetectGating" : -36.0,
+													"Limiter" : 1.0,
+													"Meters" : 0.0,
+													"MetersRate" : 25.0,
+													"Mode" : 0.0,
+													"ProgressiveRelease" : 61.0,
+													"Range" : 20.0,
+													"Ratio" : 31.0,
+													"Release" : 101.0,
+													"SideChainFilter" : 1.0,
+													"SmoothGain" : 0.0,
+													"Thresh" : -20.0
+												}
+
+											}
+
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "Max Compressor.amxd",
+													"origin" : "Max Compressor.amxd",
+													"type" : "amxd",
+													"subtype" : "Undefined",
+													"embed" : 0,
+													"snapshot" : 													{
+														"name" : "Max Compressor.amxd",
+														"origname" : "~/max/StreamMixer/modules/Max Compressor.amxd",
+														"valuedictionary" : 														{
+															"parameter_values" : 															{
+																"AGC" : 1.0,
+																"Attack" : 37.0,
+																"Bypass" : 0.0,
+																"ChannelCoupling" : 0.0,
+																"Delay" : 0.0,
+																"DownExpandEnable" : 1.0,
+																"DownExpandThresh" : -23.0,
+																"DualBand" : 0.0,
+																"Gain" : 0.0,
+																"LevelDetectFreeze" : -54.0,
+																"LevelDetectGating" : -36.0,
+																"Limiter" : 1.0,
+																"Meters" : 0.0,
+																"MetersRate" : 25.0,
+																"Mode" : 0.0,
+																"ProgressiveRelease" : 61.0,
+																"Range" : 20.0,
+																"Ratio" : 31.0,
+																"Release" : 101.0,
+																"SideChainFilter" : 1.0,
+																"SmoothGain" : 0.0,
+																"Thresh" : -20.0
+															}
+
+														}
+
+													}
+,
+													"fileref" : 													{
+														"name" : "Max Compressor.amxd",
+														"filename" : "Max Compressor.amxd.maxsnap",
+														"filepath" : "~/Documents/Max 8/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "fdf674bebad943c54610c4259a1d4d49"
+													}
+
+												}
+, 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "Max Compressor.amxd[1]",
+													"origin" : "Max Compressor.amxd",
+													"type" : "amxd",
+													"subtype" : "Undefined",
+													"embed" : 0,
+													"fileref" : 													{
+														"name" : "Max Compressor.amxd[1]",
+														"filename" : "Max Compressor.amxd[1].maxsnap",
+														"filepath" : "~/Documents/Max 8/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "09af109eb842a5b61e19cbd35841e930"
+													}
+
+												}
+ ]
+										}
+
+									}
+,
+									"text" : "amxd~ \"Max Compressor.amxd\"",
+									"varname" : "amxd~[1]",
+									"viewvisibility" : 1
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "newobj",
@@ -549,195 +718,6 @@
 								}
 
 							}
-, 							{
-								"box" : 								{
-									"autosave" : 1,
-									"bgmode" : 1,
-									"border" : 0,
-									"clickthrough" : 0,
-									"enablehscroll" : 0,
-									"enablevscroll" : 0,
-									"id" : "obj-47",
-									"lockeddragscroll" : 0,
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 4,
-									"offset" : [ 0.0, 0.0 ],
-									"outlettype" : [ "signal", "signal", "", "" ],
-									"patching_rect" : [ 172.0, 216.0, 555.0, 196.0 ],
-									"saved_attribute_attributes" : 									{
-										"valueof" : 										{
-											"parameter_invisible" : 1,
-											"parameter_longname" : "amxd~",
-											"parameter_shortname" : "amxd~",
-											"parameter_type" : 3
-										}
-
-									}
-,
-									"saved_object_attributes" : 									{
-										"parameter_enable" : 1,
-										"patchername" : "Max Compressor.amxd",
-										"patchername_fallback" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max Compressor/Max Compressor.amxd"
-									}
-,
-									"snapshot" : 									{
-										"filetype" : "C74Snapshot",
-										"version" : 2,
-										"minorversion" : 0,
-										"name" : "snapshotlist",
-										"origin" : "max~",
-										"type" : "list",
-										"subtype" : "Undefined",
-										"embed" : 1,
-										"snapshot" : 										{
-											"name" : "Max Compressor.amxd",
-											"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max Compressor/Max Compressor.amxd",
-											"valuedictionary" : 											{
-												"parameter_values" : 												{
-													"AGC" : 1.0,
-													"Attack" : 37.0,
-													"Bypass" : 0.0,
-													"ChannelCoupling" : 0.0,
-													"Delay" : 0.0,
-													"DownExpandEnable" : 1.0,
-													"DownExpandThresh" : -23.0,
-													"DualBand" : 0.0,
-													"Gain" : 0.0,
-													"LevelDetectFreeze" : -54.0,
-													"LevelDetectGating" : -36.0,
-													"Limiter" : 1.0,
-													"Meters" : 0.0,
-													"MetersRate" : 25.0,
-													"Mode" : 0.0,
-													"ProgressiveRelease" : 62.0,
-													"Range" : 20.0,
-													"Ratio" : 31.0,
-													"Release" : 100.0,
-													"SideChainFilter" : 1.0,
-													"SmoothGain" : 0.0,
-													"Thresh" : -20.0
-												}
-
-											}
-
-										}
-,
-										"snapshotlist" : 										{
-											"current_snapshot" : 1,
-											"entries" : [ 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "Max Compressor.amxd",
-													"origin" : "Max Compressor.amxd",
-													"type" : "amxd",
-													"subtype" : "Undefined",
-													"embed" : 0,
-													"snapshot" : 													{
-														"name" : "Max Compressor.amxd",
-														"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max Compressor/Max Compressor.amxd",
-														"valuedictionary" : 														{
-															"parameter_values" : 															{
-																"AGC" : 1.0,
-																"Attack" : 37.0,
-																"Bypass" : 0.0,
-																"ChannelCoupling" : 0.0,
-																"Delay" : 0.0,
-																"DownExpandEnable" : 1.0,
-																"DownExpandThresh" : -23.0,
-																"DualBand" : 0.0,
-																"Gain" : 0.0,
-																"LevelDetectFreeze" : -54.0,
-																"LevelDetectGating" : -36.0,
-																"Limiter" : 1.0,
-																"Meters" : 1.0,
-																"MetersRate" : 25.0,
-																"Mode" : 0.0,
-																"ProgressiveRelease" : 62.0,
-																"Range" : 20.0,
-																"Ratio" : 31.0,
-																"Release" : 100.0,
-																"SideChainFilter" : 1.0,
-																"SmoothGain" : 0.0,
-																"Thresh" : -20.0
-															}
-
-														}
-
-													}
-,
-													"fileref" : 													{
-														"name" : "Max Compressor.amxd",
-														"filename" : "Max Compressor.amxd.maxsnap",
-														"filepath" : "~/Documents/Max 8/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "fdf674bebad943c54610c4259a1d4d49"
-													}
-
-												}
-, 												{
-													"filetype" : "C74Snapshot",
-													"version" : 2,
-													"minorversion" : 0,
-													"name" : "Max Compressor.amxd[1]",
-													"origin" : "Max Compressor.amxd",
-													"type" : "amxd",
-													"subtype" : "Undefined",
-													"embed" : 0,
-													"snapshot" : 													{
-														"name" : "Max Compressor.amxd",
-														"origname" : "C74:/packages/Max for Live/patchers/Max Audio Effect/Max Compressor/Max Compressor.amxd",
-														"valuedictionary" : 														{
-															"parameter_values" : 															{
-																"AGC" : 1.0,
-																"Attack" : 37.0,
-																"Bypass" : 0.0,
-																"ChannelCoupling" : 0.0,
-																"Delay" : 0.0,
-																"DownExpandEnable" : 1.0,
-																"DownExpandThresh" : -23.0,
-																"DualBand" : 0.0,
-																"Gain" : 0.0,
-																"LevelDetectFreeze" : -54.0,
-																"LevelDetectGating" : -36.0,
-																"Limiter" : 1.0,
-																"Meters" : 0.0,
-																"MetersRate" : 25.0,
-																"Mode" : 0.0,
-																"ProgressiveRelease" : 62.0,
-																"Range" : 20.0,
-																"Ratio" : 31.0,
-																"Release" : 100.0,
-																"SideChainFilter" : 1.0,
-																"SmoothGain" : 0.0,
-																"Thresh" : -20.0
-															}
-
-														}
-
-													}
-,
-													"fileref" : 													{
-														"name" : "Max Compressor.amxd[1]",
-														"filename" : "Max Compressor.amxd[1].maxsnap",
-														"filepath" : "~/Documents/Max 8/Snapshots",
-														"filepos" : -1,
-														"snapshotfileid" : "09af109eb842a5b61e19cbd35841e930"
-													}
-
-												}
- ]
-										}
-
-									}
-,
-									"text" : "amxd~ \"Max Compressor.amxd\"",
-									"varname" : "amxd~",
-									"viewvisibility" : 1
-								}
-
-							}
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
@@ -755,7 +735,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-47", 0 ],
+									"destination" : [ "obj-5", 0 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -792,7 +772,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
-									"source" : [ "obj-47", 0 ]
+									"source" : [ "obj-5", 0 ]
 								}
 
 							}
@@ -922,13 +902,13 @@
 					"patching_rect" : [ 494.0, 272.5, 40.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.dial[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 1 ]
 						}
 
 					}
@@ -1314,21 +1294,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"speed" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"mode" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"quality" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"originallengthms" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"play" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
 									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ]
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ]
 								}
 
 							}
@@ -1338,21 +1318,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"speed" : [ 1.0 ],
-									"timestretch" : [ 0 ],
-									"mode" : [ "basic" ],
-									"pitchshift" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
-									"quality" : [ "basic" ],
-									"formantcorrection" : [ 0 ],
-									"slurtime" : [ 0.0 ],
-									"play" : [ 0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"originallengthms" : [ 0.0 ],
-									"originaltempo" : [ 120.0 ],
 									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"play" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"quality" : [ "basic" ],
 									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ]
+									"speed" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"pitchshift" : [ 1.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ],
+									"slurtime" : [ 0.0 ],
+									"mode" : [ "basic" ]
 								}
 
 							}
@@ -1385,7 +1365,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 595.0, 315.0, 100.0, 22.0 ],
+					"patching_rect" : [ 595.0, 267.5, 86.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -1446,8 +1426,8 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
-					"midpoints" : [ 604.5, 339.0, 540.0, 339.0, 540.0, 321.0, 72.0, 321.0, 72.0, 360.0, 19.5, 360.0 ],
-					"order" : 8,
+					"midpoints" : [ 604.5, 291.0, 546.0, 291.0, 546.0, 361.0, 63.0, 361.0, 63.0, 360.0, 19.5, 360.0 ],
+					"order" : 9,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -1455,7 +1435,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 604.5, 339.0, 693.0, 339.0, 693.0, 384.0, 707.5, 384.0 ],
+					"midpoints" : [ 604.5, 291.0, 693.0, 291.0, 693.0, 384.0, 707.5, 384.0 ],
 					"order" : 0,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1464,16 +1444,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
-					"midpoints" : [ 604.5, 339.0, 540.0, 339.0, 540.0, 354.0, 426.0, 354.0, 426.0, 360.0, 374.5, 360.0 ],
-					"order" : 6,
-					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-33", 0 ],
-					"midpoints" : [ 604.5, 339.0, 540.0, 339.0, 540.0, 321.0, 165.0, 321.0, 165.0, 360.0, 113.5, 360.0 ],
+					"midpoints" : [ 604.5, 291.0, 546.0, 291.0, 546.0, 359.0, 417.0, 359.0, 417.0, 360.0, 374.5, 360.0 ],
 					"order" : 7,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1481,8 +1452,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"midpoints" : [ 604.5, 291.0, 546.0, 291.0, 546.0, 359.0, 156.0, 359.0, 156.0, 360.0, 113.5, 360.0 ],
+					"order" : 8,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-39", 0 ],
-					"midpoints" : [ 604.5, 339.0, 582.0, 339.0, 582.0, 432.0, 657.0, 432.0, 657.0, 471.0, 678.5, 471.0 ],
+					"midpoints" : [ 604.5, 291.0, 582.0, 291.0, 582.0, 432.0, 666.0, 432.0, 666.0, 465.0, 678.5, 465.0 ],
 					"order" : 2,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1491,7 +1471,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 604.5, 339.0, 707.5, 339.0 ],
+					"midpoints" : [ 604.5, 291.0, 693.0, 291.0, 693.0, 330.0, 707.5, 330.0 ],
 					"order" : 1,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1499,8 +1479,17 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-42", 0 ],
+					"midpoints" : [ 604.5, 291.0, 604.5, 291.0 ],
+					"order" : 6,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 604.5, 339.0, 604.5, 339.0 ],
+					"midpoints" : [ 604.5, 291.0, 582.0, 291.0, 582.0, 339.0, 604.5, 339.0 ],
 					"order" : 5,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1509,7 +1498,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 604.5, 339.0, 582.0, 339.0, 582.0, 429.0, 609.5, 429.0 ],
+					"midpoints" : [ 604.5, 291.0, 582.0, 291.0, 582.0, 429.0, 609.5, 429.0 ],
 					"order" : 3,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1518,7 +1507,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 604.5, 339.0, 582.0, 339.0, 582.0, 387.0, 604.5, 387.0 ],
+					"midpoints" : [ 604.5, 291.0, 582.0, 291.0, 582.0, 387.0, 604.5, 387.0 ],
 					"order" : 4,
 					"source" : [ "obj-11", 0 ]
 				}
@@ -1835,19 +1824,19 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-53::obj-52" : [ "live.gain~[3]", "send", 0 ],
+			"obj-53::obj-49" : [ "live.dial[4]", "damping", 0 ],
+			"obj-16" : [ "live.dial[1]", "live.dial", 0 ],
+			"obj-48::obj-5" : [ "amxd~[1]", "amxd~[1]", 0 ],
+			"obj-18" : [ "live.dial", "live.dial", 0 ],
+			"obj-53::obj-46" : [ "live.dial[2]", "size", 0 ],
+			"obj-38" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
+			"obj-35" : [ "live.gain~[2]", "Desktop", 0 ],
 			"obj-53::obj-47" : [ "live.dial[3]", "decay", 0 ],
 			"obj-55" : [ "toggle", "toggle", 0 ],
-			"obj-16" : [ "live.dial[1]", "live.dial", 0 ],
-			"obj-48::obj-47" : [ "amxd~", "amxd~", 0 ],
-			"obj-53::obj-50" : [ "live.dial[5]", "live.dial[2]", 0 ],
-			"obj-38" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
-			"obj-53::obj-49" : [ "live.dial[4]", "damping", 0 ],
-			"obj-53::obj-46" : [ "live.dial[2]", "size", 0 ],
-			"obj-53::obj-52" : [ "live.gain~[3]", "send", 0 ],
-			"obj-9" : [ "live.gain~", "BGM", 0 ],
 			"obj-32" : [ "live.gain~[1]", "MIC", 0 ],
-			"obj-18" : [ "live.dial", "live.dial", 0 ],
-			"obj-35" : [ "live.gain~[2]", "Desktop", 0 ],
+			"obj-9" : [ "live.gain~", "BGM", 0 ],
+			"obj-53::obj-50" : [ "live.dial[5]", "live.dial[2]", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -1869,6 +1858,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "channelEQ.maxpat",
+				"bootpath" : "~/max/StreamMixer/modules",
+				"patcherrelativepath" : "./modules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Max Compressor.amxd.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
@@ -1880,13 +1876,6 @@
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../Documents/Max 8/Snapshots",
 				"type" : "mx@s",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "channelEQ.maxpat",
-				"bootpath" : "~/max/StreamMixer/modules",
-				"patcherrelativepath" : "./modules",
-				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
