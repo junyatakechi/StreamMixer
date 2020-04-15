@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 946.0, 128.0, 797.0, 561.0 ],
+		"rect" : [ 786.0, 79.0, 797.0, 565.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,84 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 187.0, 365.0, 42.0, 22.0 ],
+					"text" : "-10."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-45",
+					"maxclass" : "flonum",
+					"maximum" : 0.0,
+					"minimum" : -120.0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 187.0, 336.0, 42.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-46",
+					"lastchannelcount" : 0,
+					"livemode" : 1,
+					"maxclass" : "live.gain~",
+					"mode" : 1,
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 187.0, 399.0, 69.0, 140.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Discord",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4,
+							"parameter_mmin" : -70.0,
+							"parameter_longname" : "live.gain~[4]"
+						}
+
+					}
+,
+					"varname" : "live.gain~[3]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 555.0, 13.0, 100.0, 20.0 ],
+					"text" : "Discord"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 555.0, 39.0, 100.0, 22.0 ],
+					"text" : "adc~ 5 6"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-42",
 					"linecount" : 2,
@@ -93,13 +171,13 @@
 					"patching_rect" : [ 494.0, 123.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1,
+							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "toggle",
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_type" : 2,
 							"parameter_longname" : "toggle",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1,
-							"parameter_initial" : [ 1 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -217,14 +295,14 @@
 									"patching_rect" : [ 256.5, 44.0, 69.0, 140.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_mmax" : 6.0,
+											"parameter_initial" : [ -8.000000999999997 ],
 											"parameter_shortname" : "send",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4,
 											"parameter_mmin" : -70.0,
 											"parameter_longname" : "live.gain~[3]",
-											"parameter_initial_enable" : 1,
-											"parameter_mmax" : 6.0,
-											"parameter_initial" : [ -8.000000999999997 ]
+											"parameter_initial_enable" : 1
 										}
 
 									}
@@ -244,12 +322,12 @@
 									"patching_rect" : [ 470.5, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ 81.000000000000114 ],
 											"parameter_shortname" : "live.dial[2]",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[5]",
-											"parameter_initial_enable" : 1,
-											"parameter_initial" : [ 81.000000000000114 ]
+											"parameter_initial_enable" : 1
 										}
 
 									}
@@ -269,12 +347,12 @@
 									"patching_rect" : [ 427.5, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ 56.999999999999972 ],
 											"parameter_shortname" : "damping",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[4]",
-											"parameter_initial_enable" : 1,
-											"parameter_initial" : [ 56.999999999999972 ]
+											"parameter_initial_enable" : 1
 										}
 
 									}
@@ -294,12 +372,12 @@
 									"patching_rect" : [ 392.5, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ 57.999999999999936 ],
 											"parameter_shortname" : "decay",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[3]",
-											"parameter_initial_enable" : 1,
-											"parameter_initial" : [ 57.999999999999936 ]
+											"parameter_initial_enable" : 1
 										}
 
 									}
@@ -319,12 +397,12 @@
 									"patching_rect" : [ 352.0, 61.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_initial" : [ 36.000000000000014 ],
 											"parameter_shortname" : "size",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 0,
 											"parameter_longname" : "live.dial[2]",
-											"parameter_initial_enable" : 1,
-											"parameter_initial" : [ 36.000000000000014 ]
+											"parameter_initial_enable" : 1
 										}
 
 									}
@@ -833,7 +911,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 669.0, 472.5, 41.0, 22.0 ],
-					"text" : "-8."
+					"text" : "-5."
 				}
 
 			}
@@ -864,12 +942,12 @@
 					"patching_rect" : [ 721.0, 453.0, 74.0, 53.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "mc.live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "mc.live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "mc.live.gain~"
 						}
 
 					}
@@ -902,13 +980,13 @@
 					"patching_rect" : [ 494.0, 272.5, 40.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
+							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
 							"parameter_longname" : "live.dial[1]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ]
+							"parameter_initial_enable" : 1
 						}
 
 					}
@@ -941,11 +1019,11 @@
 					"patching_rect" : [ 452.0, 272.5, 40.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "live.dial",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial",
-							"parameter_mmax" : 1.0
+							"parameter_longname" : "live.dial"
 						}
 
 					}
@@ -1007,12 +1085,12 @@
 					"patching_rect" : [ 104.0, 399.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "Desktop",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[2]",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "live.gain~[2]"
 						}
 
 					}
@@ -1063,12 +1141,12 @@
 					"patching_rect" : [ 365.0, 399.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "MIC",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~[1]",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "live.gain~[1]"
 						}
 
 					}
@@ -1107,7 +1185,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 340.0, 39.0, 100.0, 22.0 ],
-					"text" : "adc~ 1 2"
+					"text" : "adc~ 3 4"
 				}
 
 			}
@@ -1119,7 +1197,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 448.0, 39.0, 100.0, 22.0 ],
-					"text" : "adc~ 67"
+					"text" : "adc~ 7"
 				}
 
 			}
@@ -1157,7 +1235,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 691.0, 512.0, 100.0, 22.0 ],
-					"text" : "mc.dac~ 67 68"
+					"text" : "mc.dac~ 7 8"
 				}
 
 			}
@@ -1240,7 +1318,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 584.0, 512.0, 100.0, 22.0 ],
-					"text" : "mc.dac~ 65 66"
+					"text" : "mc.dac~ 1 2"
 				}
 
 			}
@@ -1258,12 +1336,12 @@
 					"patching_rect" : [ 10.0, 399.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_mmax" : 6.0,
 							"parameter_shortname" : "BGM",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
-							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_longname" : "live.gain~"
 						}
 
 					}
@@ -1294,21 +1372,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
+									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
+									"mode" : [ "basic" ],
 									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ]
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -1318,21 +1396,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
+									"formant" : [ 1.0 ],
 									"pitchcorrection" : [ 0 ],
 									"followglobaltempo" : [ 0 ],
-									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ],
+									"mode" : [ "basic" ],
 									"timestretch" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
-									"formant" : [ 1.0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
 									"pitchshift" : [ 1.0 ],
-									"originaltempo" : [ 120.0 ],
-									"basictuning" : [ 440 ],
+									"formantcorrection" : [ 0 ],
+									"speed" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
-									"mode" : [ "basic" ]
+									"originallength" : [ 0.0, "ticks" ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
+									"originaltempo" : [ 120.0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -1405,7 +1483,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 698.0, 345.0, 89.0, 35.0 ],
-					"text" : ";\rdsp iovs 128"
+					"text" : ";\rdsp iovs 256"
 				}
 
 			}
@@ -1427,7 +1505,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-17", 0 ],
 					"midpoints" : [ 604.5, 291.0, 546.0, 291.0, 546.0, 361.0, 63.0, 361.0, 63.0, 360.0, 19.5, 360.0 ],
-					"order" : 9,
+					"order" : 10,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -1453,8 +1531,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-33", 0 ],
-					"midpoints" : [ 604.5, 291.0, 546.0, 291.0, 546.0, 359.0, 156.0, 359.0, 156.0, 360.0, 113.5, 360.0 ],
-					"order" : 8,
+					"midpoints" : [ 604.5, 289.0, 546.0, 289.0, 546.0, 359.0, 156.0, 359.0, 156.0, 360.0, 113.5, 360.0 ],
+					"order" : 9,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -1482,6 +1560,15 @@
 					"destination" : [ "obj-42", 0 ],
 					"midpoints" : [ 604.5, 291.0, 604.5, 291.0 ],
 					"order" : 6,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 0 ],
+					"midpoints" : [ 604.5, 291.0, 546.0, 291.0, 546.0, 359.0, 240.0, 359.0, 240.0, 360.0, 196.5, 360.0 ],
+					"order" : 8,
 					"source" : [ "obj-11", 0 ]
 				}
 
@@ -1747,6 +1834,52 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-46", 1 ],
+					"midpoints" : [ 645.5, 360.0, 246.5, 360.0 ],
+					"source" : [ "obj-43", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"midpoints" : [ 564.5, 361.0, 250.0, 361.0, 250.0, 393.0, 196.5, 393.0 ],
+					"source" : [ "obj-43", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-44", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-44", 1 ],
+					"source" : [ "obj-45", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"midpoints" : [ 209.0, 549.0, 432.0, 549.0, 432.0, 387.0, 417.0, 387.0, 417.0, 381.0, 542.5, 381.0 ],
+					"source" : [ "obj-46", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"midpoints" : [ 196.5, 549.0, 431.0, 549.0, 431.0, 387.0, 417.0, 387.0, 417.0, 381.0, 461.5, 381.0 ],
+					"source" : [ "obj-46", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
 					"midpoints" : [ 457.5, 93.0, 538.5, 93.0 ],
 					"source" : [ "obj-48", 0 ]
@@ -1756,7 +1889,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-20", 1 ],
-					"midpoints" : [ 534.5, 258.0, 546.0, 258.0, 546.0, 372.0, 542.5, 372.0 ],
+					"midpoints" : [ 534.5, 258.0, 542.0, 258.0, 542.0, 372.0, 542.5, 372.0 ],
 					"source" : [ "obj-53", 1 ]
 				}
 
@@ -1824,19 +1957,20 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-53::obj-52" : [ "live.gain~[3]", "send", 0 ],
-			"obj-53::obj-49" : [ "live.dial[4]", "damping", 0 ],
 			"obj-16" : [ "live.dial[1]", "live.dial", 0 ],
+			"obj-9" : [ "live.gain~", "BGM", 0 ],
+			"obj-32" : [ "live.gain~[1]", "MIC", 0 ],
+			"obj-53::obj-47" : [ "live.dial[3]", "decay", 0 ],
 			"obj-48::obj-5" : [ "amxd~[1]", "amxd~[1]", 0 ],
+			"obj-55" : [ "toggle", "toggle", 0 ],
+			"obj-53::obj-50" : [ "live.dial[5]", "live.dial[2]", 0 ],
 			"obj-18" : [ "live.dial", "live.dial", 0 ],
-			"obj-53::obj-46" : [ "live.dial[2]", "size", 0 ],
 			"obj-38" : [ "mc.live.gain~", "mc.live.gain~", 0 ],
 			"obj-35" : [ "live.gain~[2]", "Desktop", 0 ],
-			"obj-53::obj-47" : [ "live.dial[3]", "decay", 0 ],
-			"obj-55" : [ "toggle", "toggle", 0 ],
-			"obj-32" : [ "live.gain~[1]", "MIC", 0 ],
-			"obj-9" : [ "live.gain~", "BGM", 0 ],
-			"obj-53::obj-50" : [ "live.dial[5]", "live.dial[2]", 0 ],
+			"obj-53::obj-49" : [ "live.dial[4]", "damping", 0 ],
+			"obj-53::obj-52" : [ "live.gain~[3]", "send", 0 ],
+			"obj-46" : [ "live.gain~[4]", "Discord", 0 ],
+			"obj-53::obj-46" : [ "live.dial[2]", "size", 0 ],
 			"parameterbanks" : 			{
 
 			}
