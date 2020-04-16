@@ -101,13 +101,13 @@
 					"patching_rect" : [ 1272.5, 322.5, 34.5, 34.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "toggle[1]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "toggle",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "toggle[1]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1
+							"parameter_type" : 2
 						}
 
 					}
@@ -141,12 +141,12 @@
 					"patching_rect" : [ 1222.5, 322.5, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "master",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "mc.live.gain~[3]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "master",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -167,13 +167,13 @@
 					"patching_rect" : [ 1277.0, 81.0, 34.5, 34.5 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "toggle",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "toggle",
 							"parameter_enum" : [ "off", "on" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "toggle",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1
+							"parameter_type" : 2
 						}
 
 					}
@@ -880,12 +880,12 @@
 					"patching_rect" : [ 862.0, 358.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "return",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[13]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "return",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -923,12 +923,12 @@
 					"patching_rect" : [ 586.0, 358.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Discord",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[15]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Discord",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -966,12 +966,12 @@
 					"patching_rect" : [ 490.0, 358.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Desktop",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[16]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Desktop",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1025,12 +1025,12 @@
 					"patching_rect" : [ 674.0, 358.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MIC",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[17]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "MIC",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1125,12 +1125,12 @@
 					"patching_rect" : [ 392.0, 358.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "BGM",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[18]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "BGM",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1267,19 +1267,19 @@
 					"patching_rect" : [ 105.0, 51.0, 103.0, 30.0 ],
 					"preset_data" : [ 						{
 							"number" : 1,
-							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -88.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", -12.0, 5, "obj-111", "flonum", "float", -12.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -88.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -87.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", 0.0, 5, "obj-111", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -87.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
 						}
 , 						{
 							"number" : 2,
-							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -88.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", -12.0, 5, "obj-111", "flonum", "float", -12.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -88.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -87.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", 0.0, 5, "obj-111", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -87.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
 						}
 , 						{
 							"number" : 3,
-							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -88.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", -12.0, 5, "obj-111", "flonum", "float", -12.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -88.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -87.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", 0.0, 5, "obj-111", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -87.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
 						}
 , 						{
 							"number" : 4,
-							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -88.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", -12.0, 5, "obj-111", "flonum", "float", -12.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -88.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
+							"data" : [ 5, "obj-9", "live.gain~", "float", -30.0, 5, "obj-24", "flonum", "float", -87.0, 5, "obj-32", "live.gain~", "float", 0.0, 5, "obj-31", "flonum", "float", 0.0, 5, "obj-18", "live.dial", "float", 0.0, 5, "obj-25", "flonum", "float", 0.0, 5, "obj-16", "live.dial", "float", 1.0, 5, "obj-12", "flonum", "float", 1.0, 5, "obj-37", "toggle", "int", 1, 5, "obj-89", "flonum", "float", -30.0, 5, "obj-93", "live.gain~", "float", -12.0, 5, "obj-92", "flonum", "float", -12.0, 5, "obj-97", "live.gain~", "float", -8.0, 5, "obj-96", "flonum", "float", -8.0, 5, "obj-113", "live.gain~", "float", -30.0, 5, "obj-112", "live.gain~", "float", 0.0, 5, "obj-111", "flonum", "float", 0.0, 5, "obj-108", "flonum", "float", -30.0, 5, "obj-105", "live.gain~", "float", -6.0, 5, "obj-104", "flonum", "float", -6.0, 5, "obj-101", "live.gain~", "float", -3.0, 5, "obj-100", "flonum", "float", -3.0, 5, "obj-122", "live.gain~", "float", -8.0, 5, "obj-121", "flonum", "float", -8.0, 5, "obj-130", "mc.live.gain~", "float", 0.0, 5, "obj-135", "mc.live.gain~", "float", -6.0, 5, "obj-138", "flonum", "float", -6.0, 5, "obj-144", "live.gain~", "float", 0.0, 5, "obj-143", "flonum", "float", 0.0, 5, "obj-149", "live.gain~", "float", -12.0, 5, "obj-148", "flonum", "float", -12.0, 5, "obj-33", "umenu", "int", 1, 5, "obj-81", "live.gain~", "float", -30.0, 5, "obj-73", "flonum", "float", -87.0, 5, "obj-72", "live.gain~", "float", 0.0, 5, "obj-71", "flonum", "float", 0.0, 5, "obj-61", "flonum", "float", -30.0, 5, "obj-58", "live.gain~", "float", -70.0, 5, "obj-57", "flonum", "float", -70.0, 5, "obj-54", "live.gain~", "float", -70.0, 5, "obj-52", "flonum", "float", -70.0, 5, "obj-11", "live.gain~", "float", 0.0, 5, "obj-7", "flonum", "float", 0.0, 5, "obj-46", "toggle", "int", 0, 5, "obj-47", "toggle", "int", 0, 5, "obj-56", "toggle", "int", 0, 5, "obj-62", "toggle", "int", 0, 5, "obj-67", "toggle", "int", 1, 5, "obj-70", "toggle", "int", 0, 5, "obj-134", "toggle", "int", 0, 5, "obj-131", "toggle", "int", 0, 5, "obj-127", "toggle", "int", 0, 5, "obj-124", "toggle", "int", 0, 5, "obj-114", "toggle", "int", 0, 5, "obj-161", "toggle", "int", 0, 5, "obj-158", "toggle", "int", 1, 5, "obj-155", "toggle", "int", 1, 5, "obj-152", "toggle", "int", 0, 5, "obj-141", "toggle", "int", 0, 5, "obj-172", "toggle", "int", 1, 5, "obj-175", "mc.live.gain~", "float", 0.0, 5, "obj-173", "toggle", "int", 1 ]
 						}
  ]
 				}
@@ -1345,13 +1345,13 @@
 					"patching_rect" : [ 1199.5, 586.5, 112.0, 29.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "umenu",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 3,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : "umenu",
 							"parameter_enum" : [ "mute", "Monitor", "Youtube", "Discord" ],
-							"parameter_type" : 2,
-							"parameter_longname" : "umenu",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 3
+							"parameter_type" : 2
 						}
 
 					}
@@ -1413,12 +1413,12 @@
 					"patching_rect" : [ 862.0, 603.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "return",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[12]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "return",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1456,12 +1456,12 @@
 					"patching_rect" : [ 862.0, 117.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "return",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[11]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "return",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1522,12 +1522,12 @@
 					"patching_rect" : [ 1099.0, 665.5, 150.0, 47.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "monitor",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "mc.live.gain~[2]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "monitor",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1548,12 +1548,12 @@
 					"patching_rect" : [ 1227.0, 81.0, 48.0, 136.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "master",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "mc.live.gain~[1]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "master",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1592,12 +1592,12 @@
 					"patching_rect" : [ 768.0, 117.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "send",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[10]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "send",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1635,12 +1635,12 @@
 					"patching_rect" : [ 586.0, 603.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Discord",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[6]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Discord",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1678,12 +1678,12 @@
 					"patching_rect" : [ 490.0, 603.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Desktop",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[7]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Desktop",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1737,12 +1737,12 @@
 					"patching_rect" : [ 678.0, 603.5, 69.0, 143.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MIC",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[8]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "MIC",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1765,12 +1765,12 @@
 					"patching_rect" : [ 392.0, 603.5, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "BGM",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[9]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "BGM",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1808,12 +1808,12 @@
 					"patching_rect" : [ 586.0, 117.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Discord",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[5]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Discord",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -1851,12 +1851,12 @@
 					"patching_rect" : [ 490.0, 117.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "Desktop",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[4]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "Desktop",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -2042,7 +2042,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 152.0, 110.0, 89.0, 35.0 ],
-									"text" : ";\rdsp iovs 256"
+									"text" : ";\rdsp iovs 128"
 								}
 
 							}
@@ -2055,7 +2055,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 152.0, 156.0, 86.0, 35.0 ],
-									"text" : ";\rdsp sigvs 16"
+									"text" : ";\rdsp sigvs 128"
 								}
 
 							}
@@ -2265,12 +2265,12 @@
 									"patching_rect" : [ 225.5, 90.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_longname" : "live.dial[5]",
+											"parameter_initial_enable" : 1,
 											"parameter_initial" : [ 81.000000000000114 ],
 											"parameter_shortname" : "live.dial[2]",
 											"parameter_type" : 0,
-											"parameter_unitstyle" : 0,
-											"parameter_longname" : "live.dial[5]",
-											"parameter_initial_enable" : 1
+											"parameter_unitstyle" : 0
 										}
 
 									}
@@ -2290,12 +2290,12 @@
 									"patching_rect" : [ 182.5, 90.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_longname" : "live.dial[4]",
+											"parameter_initial_enable" : 1,
 											"parameter_initial" : [ 56.999999999999972 ],
 											"parameter_shortname" : "damping",
 											"parameter_type" : 0,
-											"parameter_unitstyle" : 0,
-											"parameter_longname" : "live.dial[4]",
-											"parameter_initial_enable" : 1
+											"parameter_unitstyle" : 0
 										}
 
 									}
@@ -2315,12 +2315,12 @@
 									"patching_rect" : [ 147.5, 90.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_longname" : "live.dial[3]",
+											"parameter_initial_enable" : 1,
 											"parameter_initial" : [ 57.999999999999936 ],
 											"parameter_shortname" : "decay",
 											"parameter_type" : 0,
-											"parameter_unitstyle" : 0,
-											"parameter_longname" : "live.dial[3]",
-											"parameter_initial_enable" : 1
+											"parameter_unitstyle" : 0
 										}
 
 									}
@@ -2340,12 +2340,12 @@
 									"patching_rect" : [ 107.0, 90.0, 41.0, 48.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
+											"parameter_longname" : "live.dial[2]",
+											"parameter_initial_enable" : 1,
 											"parameter_initial" : [ 36.000000000000014 ],
 											"parameter_shortname" : "size",
 											"parameter_type" : 0,
-											"parameter_unitstyle" : 0,
-											"parameter_longname" : "live.dial[2]",
-											"parameter_initial_enable" : 1
+											"parameter_unitstyle" : 0
 										}
 
 									}
@@ -3122,13 +3122,13 @@
 					"patching_rect" : [ 1137.0, 4.5, 40.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.dial[1]",
+							"parameter_initial_enable" : 1,
+							"parameter_mmax" : 1.0,
 							"parameter_initial" : [ 1 ],
 							"parameter_shortname" : ".",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial[1]",
-							"parameter_initial_enable" : 1,
-							"parameter_mmax" : 1.0
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -3161,11 +3161,11 @@
 					"patching_rect" : [ 1095.0, 4.5, 40.0, 48.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
+							"parameter_longname" : "live.dial",
+							"parameter_mmax" : 1.0,
 							"parameter_shortname" : ".",
 							"parameter_type" : 0,
-							"parameter_unitstyle" : 0,
-							"parameter_longname" : "live.dial",
-							"parameter_mmax" : 1.0
+							"parameter_unitstyle" : 0
 						}
 
 					}
@@ -3216,12 +3216,12 @@
 					"patching_rect" : [ 674.0, 117.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "MIC",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~[1]",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "MIC",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -3384,12 +3384,12 @@
 					"patching_rect" : [ 392.0, 117.0, 69.0, 140.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "BGM",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4,
 							"parameter_mmin" : -70.0,
 							"parameter_longname" : "live.gain~",
-							"parameter_mmax" : 6.0
+							"parameter_mmax" : 6.0,
+							"parameter_shortname" : "BGM",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
 						}
 
 					}
@@ -3408,21 +3408,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"timestretch" : [ 0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
+									"play" : [ 0 ],
 									"basictuning" : [ 440 ],
-									"pitchcorrection" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -3432,21 +3432,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"followglobaltempo" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"quality" : [ "basic" ],
-									"timestretch" : [ 0 ],
-									"play" : [ 0 ],
-									"formantcorrection" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
 									"mode" : [ "basic" ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"slurtime" : [ 0.0 ],
+									"pitchshift" : [ 1.0 ],
+									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
+									"play" : [ 0 ],
 									"basictuning" : [ 440 ],
-									"pitchcorrection" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"slurtime" : [ 0.0 ],
+									"followglobaltempo" : [ 0 ],
+									"timestretch" : [ 0 ],
+									"formantcorrection" : [ 0 ],
+									"originallengthms" : [ 0.0 ],
+									"formant" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ]
 								}
 
 							}
@@ -5382,35 +5382,35 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-33" : [ "umenu", "umenu", 0 ],
-			"obj-135" : [ "mc.live.gain~[2]", "monitor", 0 ],
-			"obj-81" : [ "live.gain~[18]", "BGM", 0 ],
-			"obj-53::obj-49" : [ "live.dial[4]", "damping", 0 ],
-			"obj-53::obj-47" : [ "live.dial[3]", "decay", 0 ],
-			"obj-32" : [ "live.gain~[1]", "MIC", 0 ],
-			"obj-97" : [ "live.gain~[5]", "Discord", 0 ],
-			"obj-113" : [ "live.gain~[9]", "BGM", 0 ],
-			"obj-53::obj-46" : [ "live.dial[2]", "size", 0 ],
-			"obj-105" : [ "live.gain~[7]", "Desktop", 0 ],
-			"obj-9" : [ "live.gain~", "BGM", 0 ],
-			"obj-16" : [ "live.dial[1]", ".", 0 ],
-			"obj-173" : [ "toggle[1]", "toggle", 0 ],
 			"obj-58" : [ "live.gain~[16]", "Desktop", 0 ],
 			"obj-48::obj-5" : [ "amxd~[1]", "amxd~[1]", 0 ],
-			"obj-144" : [ "live.gain~[11]", "return", 0 ],
-			"obj-130" : [ "mc.live.gain~[1]", "master", 0 ],
-			"obj-112" : [ "live.gain~[8]", "MIC", 0 ],
-			"obj-54" : [ "live.gain~[15]", "Discord", 0 ],
 			"obj-93" : [ "live.gain~[4]", "Desktop", 0 ],
-			"obj-122" : [ "live.gain~[10]", "send", 0 ],
-			"obj-172" : [ "toggle", "toggle", 0 ],
-			"obj-72" : [ "live.gain~[17]", "MIC", 0 ],
-			"obj-11" : [ "live.gain~[13]", "return", 0 ],
+			"obj-97" : [ "live.gain~[5]", "Discord", 0 ],
+			"obj-9" : [ "live.gain~", "BGM", 0 ],
 			"obj-53::obj-50" : [ "live.dial[5]", "live.dial[2]", 0 ],
-			"obj-18" : [ "live.dial", ".", 0 ],
+			"obj-72" : [ "live.gain~[17]", "MIC", 0 ],
+			"obj-112" : [ "live.gain~[8]", "MIC", 0 ],
 			"obj-101" : [ "live.gain~[6]", "Discord", 0 ],
+			"obj-113" : [ "live.gain~[9]", "BGM", 0 ],
+			"obj-105" : [ "live.gain~[7]", "Desktop", 0 ],
+			"obj-53::obj-49" : [ "live.dial[4]", "damping", 0 ],
+			"obj-122" : [ "live.gain~[10]", "send", 0 ],
+			"obj-53::obj-47" : [ "live.dial[3]", "decay", 0 ],
 			"obj-149" : [ "live.gain~[12]", "return", 0 ],
+			"obj-135" : [ "mc.live.gain~[2]", "monitor", 0 ],
+			"obj-18" : [ "live.dial", ".", 0 ],
 			"obj-175" : [ "mc.live.gain~[3]", "master", 0 ],
+			"obj-130" : [ "mc.live.gain~[1]", "master", 0 ],
+			"obj-33" : [ "umenu", "umenu", 0 ],
+			"obj-53::obj-46" : [ "live.dial[2]", "size", 0 ],
+			"obj-144" : [ "live.gain~[11]", "return", 0 ],
+			"obj-81" : [ "live.gain~[18]", "BGM", 0 ],
+			"obj-54" : [ "live.gain~[15]", "Discord", 0 ],
+			"obj-172" : [ "toggle", "toggle", 0 ],
+			"obj-16" : [ "live.dial[1]", ".", 0 ],
+			"obj-173" : [ "toggle[1]", "toggle", 0 ],
+			"obj-11" : [ "live.gain~[13]", "return", 0 ],
+			"obj-32" : [ "live.gain~[1]", "MIC", 0 ],
 			"parameterbanks" : 			{
 
 			}
